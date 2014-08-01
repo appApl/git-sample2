@@ -17,7 +17,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    label.text = @"git!";
+    label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor magentaColor];
+    label.center = self.view.center;
+    
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning
